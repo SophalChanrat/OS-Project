@@ -7,7 +7,7 @@ echo "Enter the backup destination:"
 read destination
 
 if [ -e "$source" ]; then
-	cp -r "$source" "destination"
+	cp -r "$source" "$destination"
 	echo "Backup successfully!"
 else
 	echo "Source file/directory not found!"
