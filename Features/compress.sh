@@ -1,9 +1,12 @@
 #!/bin/bash
 
 compress(){
-
-  local input_file="$1"
-  local output_file="$2"
+  local input_file
+  local output_file
+  echo "Please input file or directory to compress: "
+  read input_file
+  echo "Please input name of the output: "
+  read  output_file
 
   if [[ -z "$input_file" ]];
     then
