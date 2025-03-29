@@ -1,5 +1,5 @@
 #!/bin/bash
-
+log_file="script.log"
 # Unicode icons
 DIR="\U1F4C1"
 FILE="\U1F4C4"
@@ -22,6 +22,8 @@ if [ -d "$dir" ]; then
 			echo -e "$FILE  [FILE] $(basename "$item")"
 		fi
 	done
+	echo "$(date) - list all file in $dir " >> "$log_file"
 else
 	echo -e "$ERROR Directory not found!"
+	echo "$(date) - failed to list all file in $dir " >> "$log_file"
 fi

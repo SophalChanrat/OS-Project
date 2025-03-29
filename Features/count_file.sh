@@ -10,6 +10,7 @@ count_files() {
         echo "$(date) - Counted $count files in $dir" >> "$log_file"
     else
         echo "Error: Directory does not exist."
+        echo "$(date) failed to count file in $dir " >> "$log_file"
     fi
 }
 
