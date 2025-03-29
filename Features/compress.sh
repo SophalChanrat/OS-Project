@@ -1,53 +1,40 @@
 #!/bin/bash
 
 compress(){
-  local input_file
-  local output_file
-  echo "Please input file or directory to compress: "
-  read input_file
-  echo "Please input name of the output: "
-  read  output_file
+  read -p "Enter the file or directory to compress: " fileName
 
-  if [[ -z "$input_file" ]];
+  if [[ -z "$fileName" ]];
     then
-   	echo "Usag: $0 <file_or_directory> [output_name]"
+   	echo "Error no file provide"
 	exit 1
   fi
-  if [[ -f "$input_file" ]];
-    then
-	  if [[ -z "$output_file" ]];
-   	     then
-		output_file="${input_file##*/}.tar.gz"
-	     fi
-  elif [[ -d "$input_file" ]];
-     then
-	  if [[ -z "$output_file" ]];
-	     then
-		output_file="${input_file##*/}.zip"
-	     fi
-  fi
+  read -p "Enter teh compression format (zip, tar.gz, tar.bz2, tar.xz, tar): " extension
+  extension=${extension:-tar.gz}
 
-  if [[ ! -e "$input_file" ]];
+  if [[ ! -e "$fileName" ]];
     then
 	echo "Error: $input_file does not exist"
  	exit 1
   fi
+  temp="${fileName}_"
+  cp -r "$fileName" "$temp"
+  
+  baseName=$(basename "$temp")
 
-  case "$output_file" in
-	*.tar.gz) tar -czvf "$output_file" "$input_file";;
-	*.tar.bz2) tar -cjvf "$output_file" "$input_file";;
-	*.tar.xz) tar -cJvf "$output_file" "$input_file";;
-	*.zip) zip -r "$output_file" "$input_file";;
-	*.tar) tar -cvf "$output_file" "$input_file";;
+  case "$extension" in
+	tar.gz) tar -czvf "${baseName}.tar.gz" "$temp";;
+	tar.bz2) tar -cjvf "${baseName}.tar.bz2" "$temp";;
+	tar.xz) tar -cJvf "${baseName}.tar.xz" "$temp";;
+	zip) zip -r "${baseName}.zip" "$temp";;
+	tar) tar -cvf "${baseName}.tar" "$temp";;
 	*)
   		echo "Unsupported format"
 		exit 1
 		;;
   esac
+  rm -r "$temp"
 
-  echo "Compresstion completed: $output_file"
+  echo "Compresstion completed: ${baseName}.${extension}"
 }
 
-
-compress "$1" "$2"
-
+compress
