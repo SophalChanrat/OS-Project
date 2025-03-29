@@ -1,9 +1,11 @@
 #!/bin/bash
 
-LOG_FILE="script.log"
+LOG_FILE="$HOME/script.log"
 
 log_action() {
-    echo "$(date) - $1" >> "$LOG_FILE"
+	local message="$1"
+	local timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
+
+    	echo "[$timestamp] - $message" >> "$LOG_FILE"
 }
 
-log_action "Script started by user $(whoami)"
