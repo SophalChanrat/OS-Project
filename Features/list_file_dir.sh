@@ -22,8 +22,8 @@ if [ -d "$dir" ]; then
 			echo -e "$FILE  [FILE] $(basename "$item")"
 		fi
 	done
-	echo "$(date) - list all file in $dir " >> "$log_file"
+	echo "$(date) - $(whoami) - list all file in $dir " >> "$log_file"
 else
 	echo -e "$ERROR Directory not found!"
-	echo "$(date) - failed to list all file in $dir " >> "$log_file"
+	echo "$(date) - $(whoami) - failed to list all file in $dir " >> "$log_file"
 fi

@@ -14,7 +14,7 @@ compress(){
   if [[ ! -e "$fileName" ]];
     then
 	echo "Error: $fileName does not exist"
-	echo "$(date) - failed to compress ${fileName},${extension}" >> "$log_file"
+	echo "$(date) - $(whoami) - failed to compress ${fileName},${extension}" >> "$log_file"
  	exit 1
   fi
   temp="${fileName}_"
@@ -36,7 +36,7 @@ compress(){
   rm -r "$temp"
 
   echo "Compression completed: ${baseName}.${extension}"
-  echo "$(date) - compression completed: ${baseName},${extension}" >> "$log_file"
+  echo "$(date) - $(whoami) - compression completed: ${baseName},${extension}" >> "$log_file"
 }
 
 compress
