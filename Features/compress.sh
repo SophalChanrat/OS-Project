@@ -9,6 +9,8 @@ compress(){
 	exit 1
   fi
 
+  [[ -z "$destination" ]] && destination="."
+
   if [[ ! -e "$fileName" ]];
     then
 	echo "Error: $fileName does not exist"
@@ -30,19 +32,19 @@ compress(){
   success=0
   case $choice in
 	1)
-	  zip_path="${destination}.zip"
+	  zip_path="${destination}/${item_name}.zip"
  	  zip -r "$zip_path" "$temp/$item_name" > /dev/null 2>&1 && success=1
 	  ;;
 	2)
-	  tar_path="${destination}.tar.gz"
+	  tar_path="${destination}/${item_name}.tar.gz"
 	  tar -czf "$tar_path" -C "$temp" "$item_name" && success=1
   	  ;;
 	3)
-	  tar_path="${destination}.tar.bz2"
+	  tar_path="${destination}/${item_name}.tar.bz2"
 	  tar -cjf "$tar_path" -C "$temp" "$item_name" && success=1
 	  ;;
 	4)
-	  tar_path="${destination}.tar.xz"
+	  tar_path="${destination}/${item_name}.tar.xz"
 	  tar -cJf "$tar_path" -C "$temp" "$item_name" && success=1
 	  ;;
 	*)

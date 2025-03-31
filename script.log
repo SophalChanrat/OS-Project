@@ -29,3 +29,10 @@ Mon Mar 31 01:45:20 PM +07 2025 - chanrat - failed to backup for  to
 Mon Mar 31 01:45:27 PM +07 2025 - chanrat - failed to count file in  
 Mon Mar 31 01:52:20 PM +07 2025 - chanrat - Backup Completed for '/home/chanrat/Documents/five.txt' to '/home/chanrat/Backup' 
 Mon Mar 31 01:56:02 PM +07 2025 - chanrat - compression completed: five.txt_,tar
+Mon Mar 31 08:31:49 AM UTC 2025 - vboxuser - list all file in /home/vboxuser 
+Mon Mar 31 08:32:36 AM UTC 2025 - vboxuser - Backup Completed for 'Features/compress.sh' to '/home/vboxuser' 
+Mon Mar 31 08:39:24 AM UTC 2025 - vboxuser - compression completed: eoneb.tar.gz
+Mon Mar 31 08:52:36 AM UTC 2025 - vboxuser - compression completed: etwob.zip
+Mon Mar 31 08:53:30 AM UTC 2025 - vboxuser - compression completed: test.zip
+Mon Mar 31 08:56:02 AM UTC 2025 - vboxuser - compression completed: test.zip
+Mon Mar 31 08:56:31 AM UTC 2025 - vboxuser - compression completed: test.tar.gz
