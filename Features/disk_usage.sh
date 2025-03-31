@@ -1,3 +1,7 @@
+#!/bin/bash
+
+log_file="script.log"
+
 disk_usage(){
 	read -p "Enter the directory path: " dir
 	du -ah "$dir"
