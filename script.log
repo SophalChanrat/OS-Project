@@ -23,3 +23,9 @@ Mon Mar 31 11:47:12 AM +07 2025 - chanrat - Checked disk usage of Features
 Mon Mar 31 12:02:51 PM +07 2025 - chanrat - failed to backup for  to  
 Mon Mar 31 12:16:15 PM +07 2025 - chanrat - Counted 3947 files in /home/chanrat
 Mon Mar 31 12:16:55 PM +07 2025 - chanrat - search for a file *.txt in /home/chanrat/ 
+Mon Mar 31 12:46:37 PM +07 2025 - chanrat - search for a file *.txt in /home/chanrat/ 
+Mon Mar 31 01:44:50 PM +07 2025 - chanrat - list all file in /home/chanrat/ 
+Mon Mar 31 01:45:20 PM +07 2025 - chanrat - failed to backup for  to  
+Mon Mar 31 01:45:27 PM +07 2025 - chanrat - failed to count file in  
+Mon Mar 31 01:52:20 PM +07 2025 - chanrat - Backup Completed for '/home/chanrat/Documents/five.txt' to '/home/chanrat/Backup' 
+Mon Mar 31 01:56:02 PM +07 2025 - chanrat - compression completed: five.txt_,tar

@@ -9,7 +9,7 @@ TITLE="\U1F4C2"
 
 echo -e "\n$TITLE **DIRECTORY CONTENTS** $TITLE\n"
 
-echo "Enter the directory path:"
+echo -n  "Enter the directory path:"
 read dir
 
 if [ -d "$dir" ]; then

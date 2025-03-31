@@ -1,9 +1,9 @@
 #!/bin/bash
 log_file="script.log"
-echo "Enter the file or directory to backup;"
+echo -n  "Enter the file or directory path to backup:"
 read source
 
-echo "Enter the backup destination:"
+echo -n  "Enter the backup destination path:"
 read destination
 
 if [ -e "$source" ]; then

@@ -15,7 +15,7 @@ while true; do
 	echo "7. View log actions"
 	echo "8. Exit"
 	echo "=============================="
-	echo "Enter your choice: "
+	echo -n  "Enter your choice: "
 	read choice
 
 	case $choice in
