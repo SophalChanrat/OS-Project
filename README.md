@@ -1,4 +1,4 @@
-### File and Directory Management Program
+## File and Directory Management Program
 Our project is written in Shell language using Ubuntu. In order to run this program, you need to make sure you have bash in your virtual machince Ubuntu.
 For cloning this github repo, you need to install git in your virtual machince Ubuntu using **sudo apt intsall git** and use git clone as usual. After cloning, you need to run the program using **bash main.sh** and simply type in the number from 1-7 of our features and it will keep every actions in the 7th feature of the progarm.
 
