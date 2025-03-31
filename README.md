@@ -1,6 +1,6 @@
 ## File and Directory Management Program
 Our project is written in Shell language using Ubuntu. In order to run this program, you need to make sure you have bash in your virtual machince Ubuntu.\
-For cloning this github repo, you need to install git in your virtual machince Ubuntu using:\
+For cloning this github repo, you need to install git in your virtual machince Ubuntu using:
 ```
 sudo apt install git
 ```
