@@ -12,10 +12,10 @@ and simply type in the number from 1-7 of our features and it will keep every ac
 
 ## Featuers
 This project has 7 features:
-1. List files and directories: this feature is the same as using **ls -l**. It will list all the files in that directory and child directories.
-2. Backup files or directories: enter the file or directory of this github repo to back it up in one of your directory.
-3. Count files in a directory: enter the directory path and it will count the file in that direcotry
-4. Display disk usage: enter the directory path and it wil show the usage of all the files and directory 
-5. Search for a file using extension: enter the path of the file and the extension you want to search for (eg: .txt)
-6. Compress files or directories: enter the file or directory path and the compress extentsions
-7. Display the log actions performed by users: display the log actions of users which features do users use and it keeps track the date, time and the message of the actions
+1. **List files and directories**: this feature is the same as using **ls -l**. It will list all the files in that directory and child directories.
+2. **Backup files or directories**: enter the file or directory of this github repo to back it up in one of your directory.
+3. **Count files in a directory**: enter the directory path and it will count the file in that direcotry
+4. **Display disk usage**: enter the directory path and it wil show the usage of all the files and directory 
+5. **Search for a file using extension**: enter the path of the file and the extension you want to search for (eg: .txt)
+6. **Compress files or directories**: enter the file or directory path and the compress extentsions
+7. **Display the log actions performed by users**: display the log actions of users which features do users use and it keeps track the date, time and the message of the actions
