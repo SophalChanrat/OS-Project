@@ -1,3 +1,5 @@
+#!/bin/bash
+
 log_file="script.log"
 read -p "Enter Directory path: " dir
 read -p "Enter the file name or extension (eg. *.txt): " file
