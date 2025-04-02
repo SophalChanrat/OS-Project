@@ -2,5 +2,10 @@
 
 log_file="script.log"
 read -p "Enter the directory path: " dir
-du -ah "$dir"
-echo "$(date) - $(whoami) - Checked disk usage of $dir" >> "$log_file"
+
+if [ -d "$dir" ]; then
+	du -ah "$dir"
+	echo "$(date) - $(whoami) - Checked disk usage of $dir" >> "$log_file"
+else
+	echo "Error: directory does not exist!"
+fi
