@@ -8,7 +8,7 @@ if [ -d "$dir" ]; then
         find "$dir" -type f -name "$file"
         echo "$(date) - $(whoami) - search for a file $file in $dir " >> "$log_file"
 else
-        echo "Directory does not exist."
+        echo "Directory or File does not exist."
         echo "$(date) - $(whoami) - failed to search for a $file in $dir " >> "$log_file"
 fi
 
