@@ -33,7 +33,7 @@ compress(){
   case $choice in
 	1)
 	  zip_path="${destination}/${item_name}.zip"
- 	  zip -r "$zip_path" "$temp/$item_name" > /dev/null 2>&1 && success=1
+ 	  zip -r "$zip_path" "$temp/$item_name" && success=1
 	  ;;
 	2)
 	  tar_path="${destination}/${item_name}.tar.gz"
