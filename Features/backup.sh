@@ -6,6 +6,12 @@ read source
 echo -n  "Enter the backup destination path:"
 read destination
 
+if [ ! -d "$destination" ]; then
+	echo "Destination directory not exit. Creating it..."
+	mkdir -p "$destination"
+	echo "$(date) - $(whoami) - Created destination directory '$destination'" >> "$log_file"
+fi
+
 if [ -e "$source" ]; then
 	cp -r "$source" "$destination"
 	echo "Backup successfully!"

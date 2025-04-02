@@ -29,6 +29,7 @@ Mon Mar 31 01:45:20 PM +07 2025 - chanrat - failed to backup for  to
 Mon Mar 31 01:45:27 PM +07 2025 - chanrat - failed to count file in  
 Mon Mar 31 01:52:20 PM +07 2025 - chanrat - Backup Completed for '/home/chanrat/Documents/five.txt' to '/home/chanrat/Backup' 
 Mon Mar 31 01:56:02 PM +07 2025 - chanrat - compression completed: five.txt_,tar
+<<<<<<< HEAD
 Mon Mar 31 08:31:49 AM UTC 2025 - vboxuser - list all file in /home/vboxuser 
 Mon Mar 31 08:32:36 AM UTC 2025 - vboxuser - Backup Completed for 'Features/compress.sh' to '/home/vboxuser' 
 Mon Mar 31 08:39:24 AM UTC 2025 - vboxuser - compression completed: eoneb.tar.gz
@@ -36,3 +37,13 @@ Mon Mar 31 08:52:36 AM UTC 2025 - vboxuser - compression completed: etwob.zip
 Mon Mar 31 08:53:30 AM UTC 2025 - vboxuser - compression completed: test.zip
 Mon Mar 31 08:56:02 AM UTC 2025 - vboxuser - compression completed: test.zip
 Mon Mar 31 08:56:31 AM UTC 2025 - vboxuser - compression completed: test.tar.gz
+=======
+Mon Mar 31 03:31:42 PM +07 2025 - chanrat - compression completed: Documents.zip
+Mon Mar 31 03:36:52 PM +07 2025 - chanrat - compression completed: five.txt.zip
+Mon Mar 31 03:42:16 PM +07 2025 - chanrat - compression completed: Documents.zip
+Wed Apr  2 10:48:13 PM +07 2025 - chanrat - failed to list all file in home/chanrat/ 
+Wed Apr  2 10:48:31 PM +07 2025 - chanrat - list all file in /home/chanrat 
+Wed Apr  2 10:49:16 PM +07 2025 - chanrat - Backup Completed for 'main.sh' to '/home/chanrat/backup1' 
+Wed Apr  2 10:58:45 PM +07 2025 - chanrat - Created destination directory '/home/chanrat/backup2'
+Wed Apr  2 10:58:45 PM +07 2025 - chanrat - Backup Completed for 'main.sh' to '/home/chanrat/backup2' 
+>>>>>>> bf49d8e (update backup)
