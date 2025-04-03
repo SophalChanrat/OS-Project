@@ -51,3 +51,13 @@ Wed Apr  2 11:17:47 PM +07 2025 - chanrat - Checked disk usage of /home/chanrat
 Wed Apr  2 11:18:12 PM +07 2025 - chanrat - Checked disk usage of /home/chanrat/OS-Project
 Wed Apr  2 11:20:03 PM +07 2025 - chanrat - Checked disk usage of /home/chanrat/OS-Project
 Wed Apr  2 11:20:29 PM +07 2025 - chanrat - Checked disk usage of /home/chanrat/OS-Project/Features
+Thu Apr  3 09:44:11 +07 2025 - nika - failed to list all file in /User/nika/CS-Term2-Year2 
+Thu Apr  3 09:44:32 +07 2025 - nika - failed to list all file in '/Users/nika/CS-Term2-Year2/Operating System 
+Thu Apr  3 09:44:53 +07 2025 - nika - list all file in /Users/nika/CS-Term2-Year2/Operating System 
+Thu Apr  3 09:45:34 +07 2025 - nika - Created destination directory ''
+Thu Apr  3 09:45:34 +07 2025 - nika - failed to backup for  to  
+Thu Apr  3 09:46:09 +07 2025 - nika - Created destination directory ''
+Thu Apr  3 09:46:09 +07 2025 - nika - Backup Completed for '/Users/nika/CS-Term2-Year2/Operating System' to '' 
+Thu Apr  3 09:46:32 +07 2025 - nika - Counted   387798 files in /Users
+Thu Apr  3 09:47:24 +07 2025 - nika - Checked disk usage of /Users/nika/CS-Term2-Year2
+Thu Apr  3 09:48:26 +07 2025 - nika - search for a file *.pdf in /Users/nika/CS-Term2-Year2 
